@@ -7,7 +7,7 @@
  
 /*----------------------------------------------------------------------------*/
 
-unsigned char getRand(float mean, float std){
+/*unsigned char getRand(float mean, float std){
   unsigned char randval;
   randval = (std*normDist() + mean);
   if(randval>255)
@@ -16,6 +16,7 @@ unsigned char getRand(float mean, float std){
     randval = 0;
   return randval;
 }
+*/
 
 void getTim(unsigned char* inbuffer,float* outbuffer,int nchans,int nsamps,int index){
   int ii,jj,val;
