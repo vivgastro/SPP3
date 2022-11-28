@@ -1,3 +1,4 @@
+FFTW_PATH="/home/gup037/miniconda3/envs/summer_vac"
 FFTWFLAGS = -L${FFTW_PATH}/lib -I${FFTW_PATH}/include -lfftw3f
 
 libSigPyProc32.so: libSigPyProc32.o
