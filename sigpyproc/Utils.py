@@ -175,7 +175,7 @@ def editInplace(inst,key,value):
     inst.header[key] = value
     new_header = inst.header.SPPHeader(back_compatible=True)
     if inst.header.hdrlen != len(new_header):
-        raise ValueError,"New header is too long/short for file"
+        raise ValueError("New header is too long/short for file")
     else:
         temp.seek(0)
         temp.write(new_header)
